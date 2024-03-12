@@ -1,3 +1,5 @@
+import "./FooterOverlay.css";
+
 export const FooterOverlay = () => {
   return (
     <div>
