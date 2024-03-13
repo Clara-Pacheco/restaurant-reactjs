@@ -17,7 +17,6 @@ import { Menu } from "./containers/Menu/Menu";
 export const App = () => {
   return (
     <div>
-      <h1>Hello World!</h1>
       <NavBar />
       <Header />
       <AboutUs />
