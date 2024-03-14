@@ -38,7 +38,7 @@
 
 .app__navbar-login {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 .app__navbar-login a {
@@ -51,20 +51,9 @@
 }
 
 .app__navbar-login div {
-  /* width: 1px; */
+  width: 1px;
   height: 30px;
   background-color: var(--color-golden);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--color-black);
-}
-.app__navbar-login div:hover {
-  background-color: var(--color-crimson);
-  border-bottom: none;
-}
-.app__navbar-login div a:hover {
-  border-bottom: none;
 }
 
 .app__navbar-smallscreen {
