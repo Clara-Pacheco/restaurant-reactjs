@@ -14,6 +14,8 @@ import { Header } from "./containers/Header/Header";
 // import { Laurels } from "./containers/Laurels/Laurels";
 // import { Menu } from "./containers/Menu/Menu";
 
+import "./App.css";
+
 export const App = () => {
   return (
     <div>
