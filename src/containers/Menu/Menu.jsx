@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-import { SubHeading } from "../../components/SubHeading/SubHeading";
 import "./Menu.css";
+
+import { SubHeading } from "../../components/SubHeading/SubHeading";
+import { MenuItem } from "../../components/MenuItem/MenuItem";
 
 import { data, images } from "../../constants";
 
@@ -9,15 +11,20 @@ export const Menu = () => {
     <div className="app__specialMenu flex__center section__padding" id="menu">
       <div className="app__specialMenu-title">
         <SubHeading title="Menu that fits you palatte" />
-        <h1 className="headText__cormorant">Today's Special</h1>
+        <h1 className="headtext__cormorant">Today&apos;s Special</h1>
       </div>
 
       <div className="app__specialMenu-menu">
         <div className="app__specialMenu-menu_wine flex__center">
           <p className="app__specialMenu_menu_heading">Wine & Beer</p>
           <div className="app__specialMenu_menu_items">
-            {data.wines.map((wine) => (
-              <p key={wine.title}>{wine.title}</p>
+            {data.wines.map((wine, index) => (
+              <MenuItem
+                key={wine.title + index}
+                title={wine.title}
+                price={wine.price}
+                tags={wine.tags}
+              />
             ))}
           </div>
         </div>
@@ -29,8 +36,13 @@ export const Menu = () => {
         <div className="app__specialMenu-menu_cocktails flex__center">
           <p className="app__specialMenu_menu_heading">Wine & Beer</p>
           <div className="app__specialMenu_menu_items">
-            {data.cocktails.map((cocktail) => (
-              <p key={cocktail.title}>{cocktail.title}</p>
+            {data.cocktails.map((cocktail, index) => (
+              <MenuItem
+                key={cocktail.title + index}
+                title={cocktail.title}
+                price={cocktail.price}
+                tags={cocktail.tags}
+              />
             ))}
           </div>
         </div>
