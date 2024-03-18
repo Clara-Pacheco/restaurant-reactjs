@@ -5,7 +5,7 @@ import { NavBar } from "./components/Navbar/NavBar";
 // import { SubHeading } from "./components/SubHeading/SubHeading";
 
 import { AboutUs } from "./containers/AboutUs/AboutUs";
-// import { Chef } from "./containers/Chef/Chef";
+import { Chef } from "./containers/Chef/Chef";
 // import { FindUs } from "./containers/Findus/FindUs";
 // import { Footer } from "./containers/Footer/Footer";
 // import { Gallery } from "./containers/Gallery/Gallery";
@@ -23,8 +23,8 @@ export const App = () => {
       <Header />
       <AboutUs />
       <Menu />
-      {/* <Chef />
-      <Intro />
+      <Chef />
+      {/* <Intro />
       <Laurels />
       <Gallery />
       <FindUs />
