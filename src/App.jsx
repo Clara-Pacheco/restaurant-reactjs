@@ -11,7 +11,7 @@ import { Chef } from "./containers/Chef/Chef";
 // import { Gallery } from "./containers/Gallery/Gallery";
 import { Header } from "./containers/Header/Header";
 import { Intro } from "./containers/Intro/Intro";
-// import { Laurels } from "./containers/Laurels/Laurels";
+import { Laurels } from "./containers/Laurels/Laurels";
 import { Menu } from "./containers/Menu/Menu";
 
 import "./App.css";
@@ -25,8 +25,8 @@ export const App = () => {
       <Menu />
       <Chef />
       <Intro />
-      {/* <Laurels />
-      <Gallery />
+      <Laurels />
+      {/* <Gallery />
       <FindUs />
       <Footer /> */}
     </div>
